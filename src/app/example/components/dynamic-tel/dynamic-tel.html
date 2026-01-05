@@ -6,7 +6,7 @@
         <input type="text"#nameElem [value]="contact().name" (change)="changeName(nameElem.value)"/>
         <span>({{ contact().tels.length}})</span>
     </label>
-    <button type="button" [ariaDisabled]="!removable()" (click)="remove.emit()">X</button>
+    <button type="button" [disabled]="!removable()" (click)="remove.emit()">X</button>
 </header>
 
 <ul>
