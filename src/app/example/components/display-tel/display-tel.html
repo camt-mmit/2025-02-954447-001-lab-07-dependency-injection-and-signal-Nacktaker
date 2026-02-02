@@ -1,0 +1,26 @@
+<p>display-tel works!</p>
+
+<header>
+  <div>
+    <h3>
+      <span>
+        Contact
+        <span >{{ number() | number }}</span>
+      </span>
+      <span >{{ contact().name }}</span>
+    </h3>
+    <span >({{ contact().tels.length | number }})</span>
+  </div>
+</header>
+
+<ul class="-cmp-list">
+  @for (tel of contact().tels; track $index) {
+    <li>
+      <b>
+        Tel
+        <span class="-cl-label-no app-cl-number">{{ $index + 1 | number }}</span>
+      </b>
+      <span class="-cl-data app-cl-code">{{ tel }}</span>
+    </li>
+  }
+</ul>

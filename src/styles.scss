@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+svg{
+width: 1200px;
+margin: auto;
+align-items: center;
+display: block;
+margin-top: 2rem;
+}
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f9; /* สีพื้นหลังเทาอมฟ้าอ่อนๆ */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container หลักสำหรับหุ้ม router-outlet */
+main {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* สไตล์ปุ่มมาตรฐาน (ถ้าไม่ได้ระบุคลาสเฉพาะ) */
+button {
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+/* ลบขอบน้ำเงินเวลา Focus input */
+input:focus {
+  outline: none;
+}
