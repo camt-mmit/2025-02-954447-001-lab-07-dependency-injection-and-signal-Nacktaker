@@ -15,6 +15,9 @@ module.exports = defineConfig([
     ],
     processor: angular.processInlineTemplates,
     rules: {
+      // ปิด error no-inferrable-types
+      "@typescript-eslint/no-inferrable-types": "off",
+
       "@angular-eslint/directive-selector": [
         "error",
         {
@@ -40,5 +43,5 @@ module.exports = defineConfig([
       angular.configs.templateAccessibility,
     ],
     rules: {},
-  }
+  },
 ]);
